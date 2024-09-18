@@ -57,7 +57,7 @@ def extract_full_toc_from_pdf(pdf_file: str):
 
 
 @router.get("/")
-async def get_full_toc(pdf_file_path: str = os.path.expanduser("~/backend-mr/files/rooks 9th edition.pdf")):
+async def get_full_toc(pdf_file_path: str = os.path.expanduser("~/backend-MR/files/rooks 9th edition.pdf")):
     """
     API endpoint to extract and return the full Table of Contents (TOC) from a PDF file, including chapters and subsections.
 

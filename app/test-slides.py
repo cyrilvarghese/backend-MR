@@ -159,7 +159,7 @@ def extract_chapter_pdfs(pdf_file, toc_json, num_chapters):
 # Example usage:
 if __name__ == "__main__":
     # Example usage
-    file_path = os.path.expanduser("~/backend-mr/app/test/rooks 9th edition.pdf")
+    file_path = os.path.expanduser("~/backend-MR/app/test/rooks 9th edition.pdf")
 
     # Load TOC JSON
     with open('toc_output.json', 'r') as file:

@@ -165,7 +165,7 @@ def extract_chapter_pdfs(pdf_file, num_chapters):
 # Example usage
 if __name__ == "__main__":
     # PDF file path you provided
-    file_path = os.path.expanduser("~/backend-mr/files/rooks 9th edition.pdf")
+    file_path = os.path.expanduser("~/backend-MR/files/rooks 9th edition.pdf")
 
     # Method 1: Get TOC as JSON
     toc_json = get_toc_json_from_pdf(file_path)

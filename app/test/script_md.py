@@ -202,7 +202,7 @@ def extract_chapter(pdf_file, output_format="pdf"):
 # Example usage
 if __name__ == "__main__":
     # PDF file path you provided
-    file_path = os.path.expanduser("~/backend-mr/files/rooks 9th edition.pdf")
+    file_path = os.path.expanduser("~/backend-MR/files/rooks 9th edition.pdf")
     
     # Convert each chapter of the PDF to Markdown or PDF based on flag
     output_format = "md"  # Change to "pdf" to save as PDF

@@ -103,8 +103,8 @@ def create_content_slide(service, presentation_id, title, bullet_points):
     ).execute()
 
 def main():
-    filePath= os.path.expanduser("~/backend-mr/app/helper/credentials.json")
-    filePath2= os.path.expanduser("~/backend-mr/app/helper/input.json")
+    filePath= os.path.expanduser("~/backend-MR/app/helper/credentials.json")
+    filePath2= os.path.expanduser("~/backend-MR/app/helper/input.json")
     chrome_path = '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
     webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
     creds = None

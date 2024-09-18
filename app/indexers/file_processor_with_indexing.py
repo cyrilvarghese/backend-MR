@@ -34,7 +34,7 @@ splitter =  RecursiveCharacterTextSplitter(
                 keep_separator=True
             )
 
-async def process_files(folder_path="../backend-mr/files", processed_files_path="../python-server/files/processed_files.txt"):
+async def process_files(folder_path="../backend-MR/files", processed_files_path="../python-server/files/processed_files.txt"):
     try:
         # Read the list of processed files
         processed_files = read_processed_files(processed_files_path)

@@ -179,6 +179,6 @@ def extract_chapter(pdf_file, output_format="pdf"):
 
 # Example usage
 if __name__ == "__main__":
-    file_path = os.path.expanduser("~/backend-mr/files/rooks 9th edition.pdf")
+    file_path = os.path.expanduser("~/backend-MR/files/rooks 9th edition.pdf")
     output_format = "md"  # Change to "pdf" to save as PDF
     extract_chapter(file_path, output_format)

@@ -107,7 +107,7 @@ def create_presentation(json_data):
     
     # Initialize the Google Slides API client
     creds = None
-    filePath= os.path.expanduser("~/backend-mr/app/helper/credentials.json")
+    filePath= os.path.expanduser("~/backend-MR/app/helper/credentials.json")
     flow = InstalledAppFlow.from_client_secrets_file(filePath, SCOPES)
     creds = flow.run_local_server(port=0)
 

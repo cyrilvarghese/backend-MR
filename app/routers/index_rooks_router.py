@@ -158,7 +158,7 @@ def extract_chapter_names_from_toc(pdf_file: str, chapter_numbers: List[int] = N
 
 # Define the Pydantic model with default values
 class PDFProcessingRequest(BaseModel):
-    pdf_file_path: str = os.path.expanduser("~/backend-mr/files/rooks 9th edition.pdf")  # Default file path
+    pdf_file_path: str = os.path.expanduser("~/backend-MR/files/rooks 9th edition.pdf")  # Default file path
     chapters: Optional[Union[List[int], List[tuple]]] = None  # Allow a list of chapters or ranges
 
 # Helper function to extract subsections and format them as ## headers
@@ -325,7 +325,7 @@ async def get_indexed_files():
 init_db()
 
 @router.get("/toc")
-async def get_pdf_toc(pdf_file_path: str = os.path.expanduser("~/backend-mr/files/rooks 9th edition.pdf")):
+async def get_pdf_toc(pdf_file_path: str = os.path.expanduser("~/backend-MR/files/rooks 9th edition.pdf")):
     """
     API endpoint to extract and return the Table of Contents (TOC) of a PDF.
     
