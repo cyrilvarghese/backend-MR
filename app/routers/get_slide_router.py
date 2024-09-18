@@ -13,7 +13,7 @@ from app.helper import slides_generator
 
 # code to get slide json
 # Define the directory where files are uploaded
-UPLOAD_DIRECTORY = os.path.expanduser("~/medical researcher/files")
+UPLOAD_DIRECTORY = os.path.expanduser("~/backend-mr/files")
 
 def create_slide_prompt() -> ChatPromptTemplate:
     # Join the list of strings into a single formatted string with bullet points
@@ -197,8 +197,8 @@ class ContentRequest(BaseModel):
     subtopic: str
     text_content: List[str]
 
-filePath= os.path.expanduser("~/medical researcher/app/helper/credentials.json")
-filePath2= os.path.expanduser("~/medical researcher/app/helper/input.json")
+filePath= os.path.expanduser("~/backend-mr/app/helper/credentials.json")
+filePath2= os.path.expanduser("~/backend-mr/app/helper/input.json")
 chrome_path = '/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
 webbrowser.register('chrome', None, webbrowser.BackgroundBrowser(chrome_path))
 

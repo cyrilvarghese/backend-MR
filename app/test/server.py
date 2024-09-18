@@ -9,7 +9,7 @@ import uvicorn
 app = FastAPI()
 
 # Serve static files from the 'static' directory
-app.mount("/home/cyrilvarghese/medical researcher/app/test/static", StaticFiles(directory="static"), name="static")
+app.mount("/home/cyrilvarghese/backend-mr/app/test/static", StaticFiles(directory="static"), name="static")
 
 @app.get("/")
 async def serve_index():

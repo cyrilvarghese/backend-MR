@@ -9,7 +9,7 @@ router = APIRouter(
 )
 
 # Define the directory where files are uploaded
-UPLOAD_DIRECTORY = os.path.expanduser("~/medical researcher/files")
+UPLOAD_DIRECTORY = os.path.expanduser("~/backend-mr/files")
 
 @router.get("/")
 async def list_uploaded_files():
