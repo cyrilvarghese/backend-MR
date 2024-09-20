@@ -223,10 +223,10 @@ async def get_llm_response(request: ContentRequest):
         })
         print(json_result)
         # Call the create_presentation function from slides_generator
-        presentation_url = slides_generator.create_presentation(json.loads(json_result))
+        # presentation_url = slides_generator.create_presentation(json.loads(json_result))
 
         # Output the presentation URL
-        print(presentation_url)
+        # print(presentation_url)
         # Return some dummy response
         return json_result
          
